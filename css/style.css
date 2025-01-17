@@ -71,7 +71,7 @@ body section {
     font-size: 1rem;
     font-weight: 500;
 }
-.nav_links .three_dot {
+.dot {
     display: none;
 }
 
@@ -151,11 +151,44 @@ body section {
         flex-direction: column;
        
     }
+    .navbar > .nav_links {
+        display: none;
+        position: absolute;
+        right: 50px;
+        top: 40px;
+        background: #ffffff;
+        box-shadow: 0px 4px 50px 0 #ddd;
+       
+    }
+    .nav_links li {
+        padding: 10px;
+    }
+    .nav_links li:hover {
+        background: #ddd;
+    }
+    .dot {
+        font-size: 1.5rem;
+        padding: 5px;
+        border-radius: 0px;
+        }
+   
+    .navbar .dot{
+        display: block;
+    }
+    .navbar:hover .nav_links {
+        display: block;
+    
+
+    }
     
     .brand h2 {
         font-size: 1.5rem;
     }
-
+    
+    .hero_content h2  {
+        font-size: 2rem;
+        line-height: 1.8rem;
+    }
     /* Team Area */
     .team_wrapper {
         grid-template-columns: repeat(1 ,1fr);
