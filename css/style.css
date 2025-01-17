@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Google Font */
+
+
+.work_sans_font {
+  font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  /* font-weight: 500; */
+  font-style: normal;
+}
+
+/* shared Style */
+body section {
+    margin: 50px 0 ;
+}
+.dark_text_color {
+    color: #424242;
+}
+.btn_primary {
+    background: #FF900E;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 15px 30px;
+    transition: .8s;
+
+}
+.btn_primary:hover {
+    background: #424242;
+}
+/* Header area  */
+.header {
+    background: rgba(255, 144, 14, 0.1);
+    font-weight: 800;
+    padding: 0 0 40px 0;
+}
+.brand h2 {
+    font-size: 2.5rem;
+}
+.header .header_wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.nav {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.nav .nav_links {
+    display: flex;
+    
+}
+
+.nav_links li {
+    list-style: none;
+    padding: 0 0 0 50px;
+}
+.nav li a {
+    text-decoration: none;
+    color: #424242;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.nav_links .three_dot {
+    display: none;
+}
+
+/* Hero section */
+
+.hero img{
+    max-width: 100%;
+
+}
+.hero_content {
+    max-width: 37.5rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 0 50px 0;
+}
+.hero_content h2 {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 4rem;
+    padding-bottom: 1rem;
+}
+.hero_content p {
+    font-weight: 400;
+    padding-bottom: 1rem;
+}
+
+/* Main area design  */
+.main_area {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Team Area */
+
+.team_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2 , 50%);
+    gap: 4.5rem;
+    align-items: center;
+
+}
+
+.team_picture {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 10px;
+}
+
+.team_content h2 ,p {
+    padding: 0 0 15px 0 ;
+}
+.team_content h2 {
+    font-size: 3rem;
+}
+.team_content #quick_list {
+    font-weight: 400;
+    color: #424242;
+}
+.team_content #f_orange {
+    color: #FF900E;
+} 
+.team_picture img {
+    max-width: 100%;
+}
+/* Responsive @media screen for under 576px screen*/
+
+@media screen and (max-width: 576px){
+    /* Main area */
+    .main_area {
+        padding: 0 30px;
+    }
+    /* header area */
+    .header_wrapper {
+        padding: 0 30px;
+    }
+    .nav_links {
+        flex-direction: column;
+       
+    }
+    
+    .brand h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Team Area */
+    .team_wrapper {
+        grid-template-columns: repeat(1 ,1fr);
+    }
+}
