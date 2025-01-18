@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      p {
+        width: 100px;
+        border: 1px solid #ddd;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      .inner {
+        border: 1px solid orange;
+        background-color: aquamarine;
+        width: 200px;
+        height: 200px;
+        transition: transform 3s ease-in .5s , background 3s linear .5s ;
+
+       
+      }
+      .inner:hover {
+          /* Transform */
+        /* transform: rotate(45deg) translate(50px , 100px) skew(50deg) scale(50);  */
+        transform: rotate(40deg);
+        background: red;
+        
+      }
+      .inner:nth-child(1){
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    </style>
+</head>
+<body>
+    
+    <p title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ducimus quos, suscipit itaque eligendi blanditiis accusantium totam dolorum in quia.">Lorem ipsum dolor sit amet. </p>
+
+
+    <div class="wrapper">
+        <div class="inner">inner - 1</div>
+        <div class="inner">inner - 2</div>
+        <div class="inner">inner - 3</div>
+    </div>
+</body>
+</html>

@@ -18,7 +18,10 @@
 
 /* shared Style */
 body section {
-    margin: 50px 0 ;
+    margin: 100px 0 ;
+}
+img {
+    max-width: 100%;
 }
 .dark_text_color {
     color: #424242;
@@ -108,7 +111,7 @@ body section {
 
 .team_wrapper {
     display: grid;
-    grid-template-columns: repeat(2 , 50%);
+    grid-template-columns: repeat(2 , .5fr);
     gap: 4.5rem;
     align-items: center;
 
@@ -133,8 +136,76 @@ body section {
 .team_content #f_orange {
     color: #FF900E;
 } 
-.team_picture img {
-    max-width: 100%;
+
+/* Feature Area */
+
+.feature {
+    
+    display: grid;
+    grid-template-columns: repeat(2 ,.5fr);
+    gap: 50px;
+}
+
+.feature_content > h2 {
+    padding: 20px;
+    border-left: 5px solid #FF900E;
+    margin-bottom: 10px;
+}
+.feature_list .feature_item {
+    padding: 20px;
+    margin: 0 0 10px 0;
+    box-shadow: 0 4px 50px 0 #ddd;
+    border-radius: 10px;
+}
+
+.feature_image button{
+     margin: -50px 0 0 -50px;
+}
+
+
+/* Some Facts Area */
+.some_facts .counter_area {
+    margin: 30px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    justify-items: center;
+}
+.some_facts .counter_area .counter {
+    border: 1px dashed #FF900E;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+/* Sponsor area */
+.sponsor_content {
+    margin: 0 auto 50px auto;
+    max-width: 500px;
+    text-align: center;
+}
+.sponsors_logos {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 50px;
+    align-items: center;
+}
+
+.sponsors_logos img {
+    filter: grayscale(100%);
+
+}
+
+/* Footer Area */
+
+.footer {
+    background: rgba(255, 244, 231, 1);
+    text-align: center;
+    padding: 30px 0;
+}
+.footer p {
+    padding: 0 20px;
 }
 /* Responsive @media screen for under 576px screen*/
 
@@ -193,4 +264,40 @@ body section {
     .team_wrapper {
         grid-template-columns: repeat(1 ,1fr);
     }
+
+    /* Feature Area */
+    .feature {
+        grid-template-columns: repeat(1 ,1fr);
+        
+    }
+    .feature_image button {
+        margin: 0;
+        display: block;
+        width: 100%;
+    }
+
+    /* Some facts / Counter Area */
+
+    .some_facts .counter_area  {
+        grid-template-columns: repeat(2 , 1fr);
+        row-gap: 10px;
+
+    }
+
+    /* Sponsor area */
+    .sponsors_logos {
+        grid-template-columns: repeat(2 , 1fr);
+        grid-template-rows: repeat(3 ,1fr);
+        
+    }
+   .sponsors_logos img:nth-child(5){
+       grid-column: span 2;
+       
+       
+   }
+
+
+
+
+
 }
