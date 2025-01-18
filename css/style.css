@@ -288,6 +288,7 @@ img {
     .sponsors_logos {
         grid-template-columns: repeat(2 , 1fr);
         grid-template-rows: repeat(3 ,1fr);
+        justify-items: center ;
         
     }
    .sponsors_logos img:nth-child(5){
